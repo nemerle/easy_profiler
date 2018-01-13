@@ -298,8 +298,9 @@ install(
     easy_profiler
     EXPORT
     ${targets_export_name}
-    DESTINATION
-    bin
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib
     INCLUDES DESTINATION "${include_install_dir}"
 )
 
