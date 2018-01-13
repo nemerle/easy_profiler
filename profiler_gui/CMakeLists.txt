@@ -4,7 +4,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-find_package(Qt5Widgets)
+find_package(Qt5 COMPONENTS Widgets)
 
 if (Qt5Widgets_FOUND)
     if (NOT("${CMAKE_BUILD_TYPE}" STREQUAL "Debug") AND WIN32)
